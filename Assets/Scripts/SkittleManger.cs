@@ -5,6 +5,7 @@ using UnityEngine;
 public class SkittleManger : MonoBehaviour
 {
     public int NumberFallenSkittles = 0;
+    
 
     public static SkittleManger instance;
     void Awake()
@@ -23,5 +24,9 @@ public class SkittleManger : MonoBehaviour
     {
         NumberFallenSkittles++;
         Debug.Log(NumberFallenSkittles);
+        if (NumberFallenSkittles == 10)
+        {
+            //Open door
+        }
     }
 }
