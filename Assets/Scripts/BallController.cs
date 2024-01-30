@@ -14,13 +14,13 @@ public class BallController : MonoBehaviour
     private int knockedOverCount;
 
     // Start is called before the first frame update
-    //void Awake()
-    //{
-    //    if (instance == null)
-    //        instance = this;
-    //    else if (instance != this)
-    //        Destroy(gameObject);
-    //}
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+    }
 
     //// Update is called once per frame
     //void Update()
